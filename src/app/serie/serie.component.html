@@ -1,0 +1,25 @@
+<p>
+  serie works!
+</p>
+
+<div class = "cointainer-fluid">
+  <div class = "col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class ='h4'>ID</th>
+          <th class ='h4'>Name</th>
+          <th class ='h4'>Channel</th>
+          <th class ='h4'>Seasons</th>
+
+        </tr>
+        <tr *ngFor = "let serie of series">
+          <td>{{serie.id}}</td>
+          <td>{{serie.name}}</td>
+          <td>{{serie.channel}}</td>
+          <td>{{serie.seasons}}</td>
+      </thead>
+    </table>
+    <p class="h5">Promedio de temporadas: {{ calcularPromedioTemporadas() }}</p>
+  </div>
+</div>
